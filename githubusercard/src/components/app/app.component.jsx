@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
+import Header from '../header/header.component';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       card: {},
-      followers: []
-    }
+      followers: [],
+    };
   }
 
   render() {
     return (
-        <div>
-          <h1>Hello World</h1>
+        <div className="container">
+          <Header/>
         </div>
-    )
+    );
   }
 }
 
