@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './card.styles.scss'
+
 const Card = ({ user: { avatar_url, name, login, location, html_url, followers, following, bio } }) => (
     <div className='card'>
       <img src={avatar_url} alt="User Image"/>
