@@ -1,15 +1,15 @@
 import React from 'react';
 
-import {ReactComponent as GitHubLogo} from '../../assests/githublogo.png';
-import {ReactComponent as LambdaLogo} from '../../assests/lambdalogo.png';
+import gitHubLogo from '../../assests/githublogo.png';
+import lambdaLogo from '../../assests/lambdalogo.png';
 import './header.styles.scss';
 
 const Header = () => (
     <div className='header'>
-      <LambdaLogo/>
-      <p>'s</p>
-      <GitHubLogo/>
+      <img src={lambdaLogo} alt="Lambda Logo" />
+      <p><span role="img">❤️</span>'s</p>
+      <img src={gitHubLogo} alt="GitHub Logo" />
     </div>
-)
+);
 
 export default Header;
